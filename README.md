@@ -42,15 +42,15 @@
 
 ```groovy
 allprojects {
-		repositories {
-			 maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		 maven { url 'https://jitpack.io' }
+	}
 }
 ```
 2、Add the dependency
 
 ```groovy
-compile 'com.github.raee:AndroidSessionManager:1.0.0'
+implementation 'com.github.raedev:session:1.0.0'
 ```
 # 一、设计
 
