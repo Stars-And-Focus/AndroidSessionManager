@@ -1,6 +1,30 @@
 
 [![](https://jitpack.io/v/raee/AndroidSessionManager.svg)](https://jitpack.io/#raee/AndroidSessionManager)
 
+
+# 引用
+
+1、Add it in your root build.gradle at the end of repositories:
+
+```groovy
+allprojects {
+    repositories {
+	 maven { url 'https://jitpack.io' }
+    }
+}
+```
+2、Add the dependency
+
+```groovy
+dependencies {
+       implementation 'com.github.raedev:AndroidSessionManager:1.0.0'
+}
+```
+
+
+
+# 简介
+
 相信大家都知道，每一个App都需要登录，登录信息都保存在本地文件中，然后我们就写一堆的操作SharedPreferences的代码了。
 
 现在，你可以完全抛弃这种方法，一句代码搞定登录信息，用户信息管理。实现全局操作。为你的程序解耦。
@@ -36,22 +60,7 @@
     }
 ```
 
-# 使用
 
-1、Add it in your root `build.gradle` at the end of repositories:
-
-```groovy
-allprojects {
-	repositories {
-		 maven { url 'https://jitpack.io' }
-	}
-}
-```
-2、Add the dependency
-
-```groovy
-implementation 'com.github.raedev:session:1.0.0'
-```
 # 一、设计
 
 抽象工厂模式，整体UML如下图，整体思路为：
@@ -193,4 +202,3 @@ public abstract class SessionManager {
 }
 ```
 
-非常简单的实现，但是却非常实用！
